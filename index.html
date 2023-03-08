@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/main.css">
+<form class="formulario" method="post" enctype="multipart/form-data">
+    <h1 class="title"><i class="icon icon-mail-1"></i> Fale Conosco</h1>
+    <p>
+    Preencha o Formulário e <b>faça um teste</b> para<br> 
+    o Kevin bs com arquivo em <b>Anexo</b>.
+    </p>
+
+    <label class="label">
+        <span>Nome</span>
+        <input type="text" name="nome" class="campo" placeholder="Digite seu nome" required=""/>
+    </label>
+    
+    <label class="label">
+        <span>E-mail</span>
+        <input type="email" name="email" class="campo" placeholder="Digite seu e-mail" required=""/>
+    </label>
+    
+    <label class="label">
+        <span>Assunto</span>
+        <input type="text" name="assunto" class="campo" placeholder="Digite um assunto" required=""/>   
+    </label>
+    <label class="label">
+        <span>Anexar Arquivo</span>
+        <input type="file" name="arquivo" id="arquivo" class="campo" required>   
+    </label>
+    <label class="naoexibir">
+        <span>Não preencher:</span><br>
+        <input type="text" name="url" value=""></p>
+    </label> 
+    
+    <label class="label">
+        <span>Mensagem</span>
+        <textarea name="mensagem" class="campo" placeholder="Deixe sua mensagem" required=""></textarea>
+    </label>
+    
+    <label class="label"> 
+    
+        <input type="hidden" name="acao" value="enviar"> 
+        <button type="submit" class="botao"> Enviar </button>
+    
+    </label>
+</form>
